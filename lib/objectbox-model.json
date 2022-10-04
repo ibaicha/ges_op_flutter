@@ -1,0 +1,839 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1472733900799255203",
+      "lastPropertyId": "3:421562248386418572",
+      "name": "AnneeObject",
+      "properties": [
+        {
+          "id": "1:4547452467411059180",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2267727907876514598",
+          "name": "valeur",
+          "type": 6
+        },
+        {
+          "id": "3:421562248386418572",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:942012812794508196",
+      "lastPropertyId": "12:5806719290455575316",
+      "name": "ChargeExploitationObject",
+      "properties": [
+        {
+          "id": "1:8223006499331393418",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:688490792830872192",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4152030563150474222",
+          "name": "unite",
+          "type": 9
+        },
+        {
+          "id": "4:7687141386428847200",
+          "name": "pu",
+          "type": 8
+        },
+        {
+          "id": "5:4699930183048965871",
+          "name": "quantite_unite_superficie",
+          "type": 8
+        },
+        {
+          "id": "6:5727926119093593139",
+          "name": "produit_id",
+          "type": 6
+        },
+        {
+          "id": "7:7973948002635527460",
+          "name": "produit_name",
+          "type": 9
+        },
+        {
+          "id": "8:5476078719174466235",
+          "name": "famille_charge_exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "9:1710432431852461415",
+          "name": "famille_charge_exploitation_name",
+          "type": 9
+        },
+        {
+          "id": "10:6715403605697150411",
+          "name": "type_charge_exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "11:6267196620263950489",
+          "name": "type_charge_exploitation_name",
+          "type": 9
+        },
+        {
+          "id": "12:5806719290455575316",
+          "name": "isAchat",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:7978549429537542936",
+      "lastPropertyId": "14:5495746333903931372",
+      "name": "ExploitationChargeExploitationObject",
+      "properties": [
+        {
+          "id": "1:7633876656134220588",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2265578140294888397",
+          "name": "date",
+          "type": 10
+        },
+        {
+          "id": "3:7780719819921090985",
+          "name": "unite",
+          "type": 9
+        },
+        {
+          "id": "4:7276144691952261185",
+          "name": "pu",
+          "type": 8
+        },
+        {
+          "id": "5:8667978622813266020",
+          "name": "quantite",
+          "type": 8
+        },
+        {
+          "id": "6:4961965848247327658",
+          "name": "valeur",
+          "type": 8
+        },
+        {
+          "id": "7:6238493284409255179",
+          "name": "observation",
+          "type": 9
+        },
+        {
+          "id": "8:4106670629010812957",
+          "name": "charge_exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "9:5460704053737860900",
+          "name": "charge_exploitation_name",
+          "type": 9
+        },
+        {
+          "id": "10:764738161502754190",
+          "name": "type_charge_exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "11:9170232907785763418",
+          "name": "type_charge_exploitation_name",
+          "type": 9
+        },
+        {
+          "id": "12:4623512695533286932",
+          "name": "famille_exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "13:2574188481725934921",
+          "name": "famille_charge_exploitation_name",
+          "type": 9
+        },
+        {
+          "id": "14:5495746333903931372",
+          "name": "exploitation_id",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1952016127645859162",
+      "lastPropertyId": "36:134601415542067038",
+      "name": "ExploitationObject",
+      "properties": [
+        {
+          "id": "1:4392154440654293685",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7187993682488837808",
+          "name": "producteur_id",
+          "type": 6
+        },
+        {
+          "id": "3:6994300224670064359",
+          "name": "prenom",
+          "type": 9
+        },
+        {
+          "id": "4:8883852308272395054",
+          "name": "nom",
+          "type": 9
+        },
+        {
+          "id": "5:4023235282199773095",
+          "name": "cni",
+          "type": 9
+        },
+        {
+          "id": "6:3973668425962269314",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "7:8332487036503149799",
+          "name": "is_actif",
+          "type": 1
+        },
+        {
+          "id": "8:8800295969373825888",
+          "name": "op_id",
+          "type": 6
+        },
+        {
+          "id": "9:4446087021631842702",
+          "name": "op_name",
+          "type": 9
+        },
+        {
+          "id": "10:1843375027359455120",
+          "name": "type_op_id",
+          "type": 6
+        },
+        {
+          "id": "11:968435778515942063",
+          "name": "type_op_name",
+          "type": 9
+        },
+        {
+          "id": "12:4703323281749049968",
+          "name": "exploitation_id",
+          "type": 6
+        },
+        {
+          "id": "13:2833469736489789633",
+          "name": "compte",
+          "type": 9
+        },
+        {
+          "id": "14:2280360324274124435",
+          "name": "unite",
+          "type": 9
+        },
+        {
+          "id": "15:401836260047423772",
+          "name": "production_prevision",
+          "type": 8
+        },
+        {
+          "id": "16:7369312492792182497",
+          "name": "superficie_prevision",
+          "type": 8
+        },
+        {
+          "id": "17:2843296647602587087",
+          "name": "pu_prevision",
+          "type": 8
+        },
+        {
+          "id": "18:3252337172527397292",
+          "name": "variete_prevision_id",
+          "type": 6
+        },
+        {
+          "id": "19:5275224505379795",
+          "name": "variete_prevision_name",
+          "type": 9
+        },
+        {
+          "id": "20:1321722165463256552",
+          "name": "produit_prevision_id",
+          "type": 6
+        },
+        {
+          "id": "21:1278002453140143201",
+          "name": "produit_prevision_name",
+          "type": 9
+        },
+        {
+          "id": "22:3836363796363308683",
+          "name": "filiere_prevision_id",
+          "type": 6
+        },
+        {
+          "id": "23:1051123057921255864",
+          "name": "filiere_prevision_name",
+          "type": 9
+        },
+        {
+          "id": "24:1711823814110962161",
+          "name": "production",
+          "type": 8
+        },
+        {
+          "id": "25:4191028435174682402",
+          "name": "superficie",
+          "type": 8
+        },
+        {
+          "id": "26:2866264399576208693",
+          "name": "pu",
+          "type": 8
+        },
+        {
+          "id": "27:6056867337728611406",
+          "name": "variete_id",
+          "type": 6
+        },
+        {
+          "id": "28:6250351877558228071",
+          "name": "variete_name",
+          "type": 9
+        },
+        {
+          "id": "29:2046973192867404267",
+          "name": "produit_id",
+          "type": 6
+        },
+        {
+          "id": "30:8746294864450256019",
+          "name": "produit_name",
+          "type": 9
+        },
+        {
+          "id": "31:8230740023156904081",
+          "name": "filiere_id",
+          "type": 6
+        },
+        {
+          "id": "32:1489426489613744531",
+          "name": "filiere_name",
+          "type": 9
+        },
+        {
+          "id": "33:4713826419735854494",
+          "name": "annne_id",
+          "type": 6
+        },
+        {
+          "id": "34:2607847453772484639",
+          "name": "annee_name",
+          "type": 9
+        },
+        {
+          "id": "35:8089932676608983997",
+          "name": "saison_id",
+          "type": 6
+        },
+        {
+          "id": "36:134601415542067038",
+          "name": "saison_name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:5004975822427360449",
+      "lastPropertyId": "2:3257846613863059869",
+      "name": "FamilleChargeExploitationObject",
+      "properties": [
+        {
+          "id": "1:5740058265143529746",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:3257846613863059869",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:9158898132135568858",
+      "lastPropertyId": "20:3525248406515164618",
+      "name": "OpObject",
+      "properties": [
+        {
+          "id": "1:1521474201302622521",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:4904132893487981301",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:6546983887072440005",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "4:5064332327785592223",
+          "name": "telephone",
+          "type": 9
+        },
+        {
+          "id": "5:2497861271631594193",
+          "name": "adresse",
+          "type": 9
+        },
+        {
+          "id": "6:2762286548775179983",
+          "name": "is_actif",
+          "type": 1
+        },
+        {
+          "id": "7:2594930912677065935",
+          "name": "type_op_id",
+          "type": 6
+        },
+        {
+          "id": "8:2285997652024290776",
+          "name": "type_op_name",
+          "type": 9
+        },
+        {
+          "id": "9:2708166986575815065",
+          "name": "localite_id",
+          "type": 6
+        },
+        {
+          "id": "10:3936827606133976308",
+          "name": "localite_name",
+          "type": 9
+        },
+        {
+          "id": "11:3481951940575528433",
+          "name": "sous_zone_id",
+          "type": 6
+        },
+        {
+          "id": "12:1028624719432842561",
+          "name": "sous_zone_name",
+          "type": 9
+        },
+        {
+          "id": "13:6749936039955951226",
+          "name": "zone_id",
+          "type": 6
+        },
+        {
+          "id": "14:2278965625760707253",
+          "name": "zone_name",
+          "type": 9
+        },
+        {
+          "id": "15:5960842017416925470",
+          "name": "departement_id",
+          "type": 6
+        },
+        {
+          "id": "16:3735675206331614398",
+          "name": "departement_name",
+          "type": 9
+        },
+        {
+          "id": "17:206076343908823863",
+          "name": "region_id",
+          "type": 6
+        },
+        {
+          "id": "18:7613332254121058291",
+          "name": "region_name",
+          "type": 9
+        },
+        {
+          "id": "19:4140130840454948633",
+          "name": "pays_id",
+          "type": 6
+        },
+        {
+          "id": "20:3525248406515164618",
+          "name": "pays_name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:8063723319573467879",
+      "lastPropertyId": "4:1252999094064422281",
+      "name": "PersonneObject",
+      "properties": [
+        {
+          "id": "1:1585381657853466434",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6040892431505228578",
+          "name": "age",
+          "type": 6
+        },
+        {
+          "id": "3:9175012964287734962",
+          "name": "poids",
+          "type": 6
+        },
+        {
+          "id": "4:1252999094064422281",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:8716512944042426771",
+      "lastPropertyId": "10:5037638756500276478",
+      "name": "ProducteurObject",
+      "properties": [
+        {
+          "id": "1:4633305959212178120",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5156124394268828733",
+          "name": "prenom",
+          "type": 9
+        },
+        {
+          "id": "3:3764074814458463941",
+          "name": "nom",
+          "type": 9
+        },
+        {
+          "id": "4:3780138639307226019",
+          "name": "cni",
+          "type": 9
+        },
+        {
+          "id": "5:5719191411707199909",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "6:7244902662207648211",
+          "name": "op_id",
+          "type": 6
+        },
+        {
+          "id": "7:3124676704704856438",
+          "name": "op_name",
+          "type": 9
+        },
+        {
+          "id": "8:6784544899207398164",
+          "name": "type_op_id",
+          "type": 6
+        },
+        {
+          "id": "9:5160793150074111663",
+          "name": "type_op_name",
+          "type": 9
+        },
+        {
+          "id": "10:5037638756500276478",
+          "name": "is_actif",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:7973398219536907695",
+      "lastPropertyId": "3:2816015867175677135",
+      "name": "SaisonObject",
+      "properties": [
+        {
+          "id": "1:8408922368749136019",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:1643041988676828158",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2816015867175677135",
+          "name": "description",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:1804104496284697583",
+      "lastPropertyId": "2:2650089428724267584",
+      "name": "TypeChargeExploitationObject",
+      "properties": [
+        {
+          "id": "1:4230553290177370231",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2650089428724267584",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "11:8843749846804323929",
+      "lastPropertyId": "2:5300040244050788913",
+      "name": "TypeChargeObject",
+      "properties": [
+        {
+          "id": "1:6925196781882737392",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5300040244050788913",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:6745163259470286005",
+      "lastPropertyId": "2:2405611858759390705",
+      "name": "TypeOpObject",
+      "properties": [
+        {
+          "id": "1:8457406828585008273",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2405611858759390705",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "13:6598424284898627806",
+      "lastPropertyId": "18:5930203361176101580",
+      "name": "UserObject",
+      "properties": [
+        {
+          "id": "1:4376688263748734080",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6439470754400898883",
+          "name": "token",
+          "type": 9
+        },
+        {
+          "id": "3:5051745316431470174",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "4:4199876060037425317",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "5:5672659374131386494",
+          "name": "firstname",
+          "type": 9
+        },
+        {
+          "id": "6:5844822653368117828",
+          "name": "lastname",
+          "type": 9
+        },
+        {
+          "id": "7:5901013253194353209",
+          "name": "profil_id",
+          "type": 6
+        },
+        {
+          "id": "8:3028994160360075893",
+          "name": "profil_name",
+          "type": 9
+        },
+        {
+          "id": "9:241198126584152695",
+          "name": "producteur_id",
+          "type": 6
+        },
+        {
+          "id": "10:8518943111481203139",
+          "name": "producteur_prenom",
+          "type": 9
+        },
+        {
+          "id": "11:5199587424817436278",
+          "name": "producteur_nom",
+          "type": 9
+        },
+        {
+          "id": "12:6120274500890914333",
+          "name": "producteur_cni",
+          "type": 9
+        },
+        {
+          "id": "13:8652018008668432195",
+          "name": "op_id",
+          "type": 6
+        },
+        {
+          "id": "14:2602818505930760966",
+          "name": "op_name",
+          "type": 9
+        },
+        {
+          "id": "15:3186806007421556701",
+          "name": "sous_zone_id",
+          "type": 6
+        },
+        {
+          "id": "16:99600319306588304",
+          "name": "sous_zone_name",
+          "type": 9
+        },
+        {
+          "id": "17:2692334285427212815",
+          "name": "zone_id",
+          "type": 6
+        },
+        {
+          "id": "18:5930203361176101580",
+          "name": "zone_name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "14:1094962404497349135",
+      "lastPropertyId": "11:8142166969063476843",
+      "name": "VarieteObject",
+      "properties": [
+        {
+          "id": "1:2520562201321501021",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6197603716757588984",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:218548491210859662",
+          "name": "surface_unite",
+          "type": 9
+        },
+        {
+          "id": "4:4425476126643227353",
+          "name": "quantite_unite",
+          "type": 9
+        },
+        {
+          "id": "5:1460415514012123091",
+          "name": "rendement_unite",
+          "type": 8
+        },
+        {
+          "id": "6:8397918239341481327",
+          "name": "produit_id",
+          "type": 6
+        },
+        {
+          "id": "7:1596810361277545108",
+          "name": "produit_name",
+          "type": 9
+        },
+        {
+          "id": "8:4106140250896573752",
+          "name": "filiere_id",
+          "type": 6
+        },
+        {
+          "id": "9:8850018008015678129",
+          "name": "filiere_name",
+          "type": 9
+        },
+        {
+          "id": "10:4588819009712122787",
+          "name": "familleemplacement_id",
+          "type": 6
+        },
+        {
+          "id": "11:8142166969063476843",
+          "name": "familleemplacement_name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "14:1094962404497349135",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
